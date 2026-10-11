@@ -1,0 +1,3 @@
+[server]
+# Streamlit's module watcher crashes on transformers' lazy imports.
+fileWatcherType = "none"

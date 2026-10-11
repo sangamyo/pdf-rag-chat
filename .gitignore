@@ -1,0 +1,19 @@
+# Virtual environments
+.venv/
+venv/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Processed PDF cache (chunks, embeddings, figure crops)
+data/
+
+# Python / OS noise
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+
+# Local browser-test artifacts
+.playwright-mcp/

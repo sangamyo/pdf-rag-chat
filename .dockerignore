@@ -1,0 +1,15 @@
+.git
+.gitignore
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+data/
+*.log
+.DS_Store
+Dockerfile
+.dockerignore
