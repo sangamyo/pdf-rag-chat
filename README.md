@@ -72,6 +72,17 @@ Chunk sizes, minimum figure size, `TOP_K` and the number of images attached per 
 
 ## Deploy
 
+### Hugging Face Spaces (recommended, free)
+
+The Space builds from the [Dockerfile](Dockerfile) (non-root user, port 8501). The free CPU tier has plenty of memory for this app.
+
+```bash
+.venv/bin/hf auth login            # once, with a "write" token from https://huggingface.co/settings/tokens
+.venv/bin/python deploy_hf.py      # creates/updates the Space and copies GROQ_API_KEY from .env into its secrets
+```
+
+Re-run `deploy_hf.py` after changes to redeploy.
+
 ### Railway (Docker)
 
 The included [Dockerfile](Dockerfile) bakes the embedding model into the image, and starts Streamlit on `$PORT`.
